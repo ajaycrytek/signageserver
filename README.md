@@ -1,12 +1,12 @@
-# pisignage-server
-**Server to manage piSignage players in a LAN or Private Network**
+# signage-server
+**Server to manage Signage players in a LAN or Private Network**
 
 
 ##New version 0.9.0 has been released!      
 ###Upgrading to 0.9.0 from existing versions  
 1. git pull origin master and apply your code changes if any 
-2. start the pisignage-server and go to url localhost:3000
-3. Enter the account name of yours at pisignage.com
+2. start the server and go to url localhost:3000
+3. Enter the account name of yours at ajaycrytek.com
 4. Default authentication credentials for player webUI has been changed to pi:pi
 5. New settings tab has been added for settings instead of config/env/all.js file
 6. New software upgrades are automatically pulled to the server and you can upgrade from the local server itself
@@ -174,7 +174,7 @@
 5.Clone this reporsitory and run follwing commands
 
    ```
-    git clone https://github.com/colloqi/pisignage-server 
+    git clone https://github.com/ajaycrytek/pisignage-server 
     
     cd pisignage-server
     
@@ -187,9 +187,8 @@
 8.Open Chrome browser and check at [http://localhost:3000](http://localhost:3000) **OR** `http://[your-ip]:3000` (ex: 192.168.1.30:3000, 10.50.16.110:3000)
 
 9.Do the following configuration before you start( **New under 0.9.0** )    
-    - Under settings, configure the username to be same as that of your signin username at pisignage.com  
-    - Download the license files either from email or from pisignage.com, upload them to your local server under settings  
-    - You can upgrade your players directly from your local server now
+    
+   
     - authentication is pi & pi, you can change this under settings
 
 **NOTE:** Please make sure **mongod** process is running and **/data/db** owenership is changed to regular user. If not use, ``` sudo chown -R your-username:user-group /data```
@@ -197,13 +196,13 @@
 
 ***Please do not forget to give PORT number of server (default 3000)***
 
-1. Download the pisignage player software [here](https://github.com/colloqi/piSignage#method-1-download-image-and-prepare-the-sd-card)
+ [here](https://github.com/colloqi/piSignage#method-1-download-image-and-prepare-the-sd-card)
 
 2. Once installed and Powered-ON Configure admin and media server to your local address and port using one of the below methods  
 
    a. Using the webUI of the player at http://<player IP>:8000/settings
   
-   b. Connect Keyboard and press Ctrl-N or F6    
+  
       * Change config and media server to `http://[your server ip]:port` (ex: 192.168.1.30:3000, 10.50.16.110:3000)   
       * Open terminal `ctrl+Alt+ t` and delete any existing _config.json and _settings.json file from `/home/pi/piSignagePro/config` directory      
    
@@ -260,4 +259,4 @@
 ####You can also manage players using Browser(http://playerip:8000) or downloading Chrome app  
 
     
-####The code is still in early release, Please raise an issue for problems or send an email to info@pisignage.com  
+####The code is still in early release, Please raise an issue for problems or send an email to info@visolution.in  
